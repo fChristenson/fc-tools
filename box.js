@@ -1,3 +1,4 @@
+// Box : ()->Box(())
 module.exports = function Box(val) {
   return {
     of: function(val) {

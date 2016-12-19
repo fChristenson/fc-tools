@@ -1,3 +1,4 @@
+// LazyBox : ()->LazyBox(())
 module.exports = function LazyBox(fn) {
   return {
     of: function(fn) {

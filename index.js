@@ -3,7 +3,7 @@ module.exports = {
   Either: require('data.either'),
   Task: require('data.task'),
   _: require('lodash'),
-  Box: require('./libs/box'),
-  LazyBox: require('./libs/lazy_box'),
-  Logging: require('./libs/Logging')
+  Box: require('./box'),
+  LazyBox: require('./lazy_box'),
+  Logging: require('./Logging')
 };
