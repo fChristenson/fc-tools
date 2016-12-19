@@ -1,9 +1,6 @@
 // LazyBox : ()->LazyBox(())
-module.exports = function LazyBox(fn) {
+function LazyBox(fn) {
   return {
-    of: function(fn) {
-      return LazyBox(fn);
-    },
     chain: function(cb) {
       return cb(fn());
     },
@@ -17,4 +14,10 @@ module.exports = function LazyBox(fn) {
     },
     inspect: 'LazyBox(' + fn + ')'
   };
+}
+
+LazyBox.of = function(fn) {
+  return LazyBox(fn);
 };
+
+module.exports = LazyBox;

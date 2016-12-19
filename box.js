@@ -1,9 +1,6 @@
 // Box : ()->Box(())
-module.exports = function Box(val) {
+function Box(val) {
   return {
-    of: function(val) {
-      return Box(val);
-    },
     chain: function(fn) {
       return fn(val);
     },
@@ -15,4 +12,10 @@ module.exports = function Box(val) {
     },
     inspect: 'Box(' + val + ')'
   };
+}
+
+Box.of = function(val) {
+  return Box(val);
 };
+
+module.exports = Box;
