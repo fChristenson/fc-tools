@@ -1,0 +1,15 @@
+{
+  "extends": "eslint:recommended",
+  "env": {
+      "node": true,
+      "browser": true,
+      "mocha": true
+  },
+  "rules": {
+    "no-console": 0,
+    "space-before-function-paren": ["error", "never"],
+    "semi": "error",
+    "eol-last": "error",
+    "indent": ["error", 2]
+  }
+}

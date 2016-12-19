@@ -1,0 +1,14 @@
+{
+  "name": "fc-tools",
+  "version": "1.0.0",
+  "description": "My own toolbox",
+  "main": "index.js",
+  "author": "Fredrik Christenson",
+  "license": "MIT",
+  "dependencies": {
+    "data.either": "*",
+    "data.task": "*",
+    "immutable-ext": "*",
+    "lodash": "*"
+  }
+}
