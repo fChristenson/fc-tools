@@ -1,6 +1,9 @@
 // LazyBox : ()->LazyBox(())
 function LazyBox(fn) {
   return {
+    ap: function(box) {
+      return box.map(fn);
+    },
     chain: function(cb) {
       return cb(fn());
     },

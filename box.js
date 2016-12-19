@@ -1,6 +1,9 @@
 // Box : ()->Box(())
 function Box(val) {
   return {
+    ap: function(box) {
+      return box.map(val);
+    },
     chain: function(fn) {
       return fn(val);
     },
