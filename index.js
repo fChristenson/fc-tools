@@ -5,5 +5,7 @@ module.exports = {
   _: require('lodash'),
   Box: require('./box'),
   LazyBox: require('./lazy_box'),
-  Logging: require('./Logging')
+  Logging: require('./logging'),
+  Transform: require('./transform'),
+  Ramda: require('./ramda')
 };

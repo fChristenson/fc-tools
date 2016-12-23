@@ -1,6 +1,6 @@
 {
   "name": "fc-tools",
-  "version": "1.2.3",
+  "version": "1.3.3",
   "description": "My own toolbox",
   "main": "index.js",
   "author": "Fredrik Christenson",
@@ -8,7 +8,9 @@
   "dependencies": {
     "data.either": "*",
     "data.task": "*",
+    "immutable": "*",
     "immutable-ext": "*",
-    "lodash": "*"
+    "lodash": "*",
+    "ramda": "*"
   }
 }
