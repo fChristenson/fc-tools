@@ -7,5 +7,6 @@ module.exports = {
   LazyBox: require('./lazy_box'),
   Logging: require('./logging'),
   Transform: require('./transform'),
-  Ramda: require('./ramda')
+  Ramda: require('./ramda'),
+  Maybe: require('./maybe')
 };
