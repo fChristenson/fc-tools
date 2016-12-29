@@ -3,6 +3,13 @@ function valToVal(val) {
   return val;
 }
 
+// a->(_->a)
+function valToDefault(val) {
+  return function() {
+    return val;
+  };
+}
+
 // a->[]
 function valToEmptyArray() {
   return [];
@@ -34,6 +41,7 @@ function valToFalse() {
 }
 
 module.exports = {
+  valToDefault: valToDefault,
   valToVal: valToVal,
   valToEmptyArray: valToEmptyArray,
   valToEmptyString: valToEmptyString,
